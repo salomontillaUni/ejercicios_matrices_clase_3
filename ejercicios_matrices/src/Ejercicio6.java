@@ -4,9 +4,11 @@ public class Ejercicio6 {
         int resultado = 0;
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
-                resultado += matriz[i][j];
+                if(matriz[i][j] % 2 == 0){
+                    resultado ++;
+                }
             }
         }
-        System.out.println("La suma de los elementos de la matriz es: " + resultado);
+        System.out.println("La cantidad de numeros pares en la matriz es de: " + resultado);
     }
 }
